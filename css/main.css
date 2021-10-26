@@ -1,12 +1,28 @@
 /* USER VARIABLES SECTION */
 
 :root {
-	--accent: orange;
+	/* Color */
+	--accent: #F88500;
 	--text: #333;
+	--dark: #202328;
+	--deep: #171A1A;
+	--dark-header: #6F7A8B;
+	--dark-div: #2D3038;
+	--light-bg: #FAFAFA;
+	--light-disabled: #E4E6E8;
+	--light-div: #E7E7E8;
+	--middle-gray: #rgba(111, 122, 139, 0.75);
+	--text-light: #999999;
+	/* Font */
 	--regular-text: 16px;
-	--lineheight: 1.65;
-	--userfont: roboto-st, sans-serif;
+	--small-text: 14px;
+	--lineheight: 1.75;
+	--userfont: raleway-wt, sans-serif; /*raleway-wt code our font*/
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+	/* Style */
+	--radius: 5px;
+	--radius-style: 0 5px;
+	--transition: .25s ease-out;
 }
 
 /* BOOTSTRAP SETTINGS SECTION */
