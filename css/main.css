@@ -63,14 +63,79 @@ body {
 	overflow-x: hidden;
 }
 
-/* === Navbar === */
+/* === Navigation bar === */  
+/* Logo section */
 .navbar{
 	position: absolute;
 	top: 0;
 	z-index: 1000;
-	color: #fff;
-    width: 100%;
+	/*color: #fff;*/
+    /*width: 100%;*/
     padding: 40px 0 27px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	left: 50px;
+	right: 50px;
+}
+.logo{
+	font-size: 17px;
+	white-space: nowrap;
+	/*Запрещает перенос строк*/
+	line-height: 1.3;
+}
+.logo__link{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .75px;
+	text-decoration: none;
+	/*Убирает подчеркивание текста*/
+}
+.logo__link span{
+	display: block;
+	font-size: 12px;
+	text-transform: none;
+	font-weight: 300;
+	letter-spacing: 3.4px;
+	opacity: 0.45;
+	margin-left: 22px;
+}
+.logo__link i{
+	width: 15px;
+	height: 15px;
+	position: relative;
+	border: 2px solid var(--accent);
+	display: inline-block;
+	border-radius: var(--radius-style);
+	margin-right: 7px;
+}
+.logo__link:hover, .logo__link:focus, .logo__link:active{
+	color: #ffffff;
+}
+/* Menu section */
+.top-menu{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.top-menu__item{
+
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 5px;
+}
+.top-menu__link{
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 7.5px 16px;
+
+}
+.top-menu__link:hover, .top-menu__link:focus, span.top-menu__link{
+	color: #ffffff;
+	background-color: rgba(196, 196, 196, 0.2);
+	border-radius: var(--radius-style);
 }
 /* === Slider === */
 .home-slider{
@@ -79,4 +144,5 @@ body {
 	color: white;
 	background-color: var(--dark);
 }
+
 
