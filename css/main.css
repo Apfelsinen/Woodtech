@@ -71,7 +71,7 @@ body {
 	z-index: 1000;
 	/*color: #fff;*/
     /*width: 100%;*/
-    padding: 40px 0 27px;
+    padding: 43px 0 20px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	left: 50px;
 	right: 50px;
@@ -137,6 +137,7 @@ body {
 	color: #ffffff;
 	background-color: rgba(196, 196, 196, 0.2);
 }
+/* Menu burger bar section */
 .menu-container{
 	position: relative;
 }
@@ -150,9 +151,16 @@ body {
 	background-position: center;
 	cursor: pointer;
 	top: 3px;
+	display: none;
+	right: 0;
 }
 .menu-toggle_active{
 	background-image: url(../images/interface/x.svg);
+}
+.top-menu.top-menu_active{
+	visibility: visible;
+	opacity: 1;
+    transition: opacity var(--transition), visibility var(--transition);
 }
 /* === Slider === */
 .home-slider{
