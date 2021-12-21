@@ -17,4 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if ($(e.target).closest('.menu-container').length) return
         closeMenu()
     })
+
+    // Swiper Sliders
+    const homeSlider = new Swiper('.home-slider', {
+        speed: 800,
+        effect: 'fade',
+        centeredSlides: true,
+    })
 });
