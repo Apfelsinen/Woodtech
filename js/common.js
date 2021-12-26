@@ -70,6 +70,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		runCallbacksOnInit: true
 	})
 
+	const advSlider = new Swiper('.advantages-slider', {
+		effect: 'fade',
+		speed: 1400,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		}
+	})
+
 	// Callback List Numbers
 
 	$('.home-callback__list li').each(function() {
